@@ -43,7 +43,7 @@ function validation(){
   }
 }
 
-/*function addList(){
+function addList(){
   let person = {
     name: document.getElementById('name').value,
     address: document.getElementById('address').value,
@@ -70,7 +70,7 @@ function validation(){
   }
   localStorage.setItem('myList', JSON.stringify(lists));
   document.getElementById("myForm").reset();
-}*/
+}
 
 
 function validationCheckName(){
