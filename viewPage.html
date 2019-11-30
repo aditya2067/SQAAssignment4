@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>View Data</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    /*function displayTable(){
+      var table  = document.getElementById("myTable");
+      var searchField = document.getElementById("search").value;
+      var list = JSON.parse(localStorage.getItem('myList'));
+
+      if (list) {
+        var count = 1
+        if (searchField && searchField.trim().length>0) {
+          list.forEach((listData)=>{
+            if (searchField==listData.name) {
+              var row = table.insertRow(count);
+              var nameCell = row.insertCell(0);
+              var addressCell = row.insertCell(1);
+              var cityCell = row.insertCell(2);
+              var mobileCell = row.insertCell(3);
+              var emailCell = row.insertCell(4);
+              var makeCell = row.insertCell(5);
+              var modelCell = row.insertCell(6);
+              var yearCell = row.insertCell(7);
+
+              nameCell.innerHTML = listData.name;
+              addressCell.innerHTML = listData.address;
+              cityCell.innerHTML = listData.city;
+              mobileCell.innerHTML = listData.mobile;
+              emailCell.innerHTML = listData.email;
+              makeCell.innerHTML = listData.make;
+              modelCell.innerHTML = listData.model;
+              yearCell.innerHTML = listData.year;
+            }
+            count++;
+          });
+        }else{
+
+                  list.forEach((listData)=>{
+                    var row = table.insertRow(count);
+                    var nameCell = row.insertCell(0);
+                    var addressCell = row.insertCell(1);
+                    var cityCell = row.insertCell(2);
+                    var mobileCell = row.insertCell(3);
+                    var emailCell = row.insertCell(4);
+                    var makeCell = row.insertCell(5);
+                    var modelCell = row.insertCell(6);
+                    var yearCell = row.insertCell(7);
+
+                    nameCell.innerHTML = listData.name;
+                    addressCell.innerHTML = listData.address;
+                    cityCell.innerHTML = listData.city;
+                    mobileCell.innerHTML = listData.mobile;
+                    emailCell.innerHTML = listData.email;
+                    makeCell.innerHTML = listData.make;
+                    modelCell.innerHTML = listData.model;
+                    yearCell.innerHTML = listData.year;
+
+                    count++;
+                  });
+        }
+
+      }else{
+        alert('There is no data');
+      }
+    }*/
+  </script>
+</head>
+<body  onload="displayTable()">
+
+<div class="container">
+  <input type="text" name="search" placeholder="search by name" id="search"/>
+  <input type="submit" name="btnSearch" value="Search" id="btnSearch" onclick="displayTable()"><br><br>
+  <table id="myTable" class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Mobile</th>
+        <th>Email</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Year</th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+</body>
+</html>

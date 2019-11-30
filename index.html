@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Form</title>
+    <script src="form.js"></script>
+    <link rel="stylesheet" href="style.css"/>
+     <meta charset="UTF-8">
+    </head>
+<body>
+  <div class="bg-image">
+    
+  </div>
+    <div id="container">
+
+         <form action="" id="myForm" name="registration_form" method="get" onsubmit="return validationOfData()">
+            <button type="submit" value="SignUp">Vehicle Registration</button><br><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name *" oninput="validationCheckName()" required/><br><br>
+            <input type="text" id="address" name="address" placeholder="Enter address *" oninput="validationCheckAddress()" required/><br><br>
+            <input type="text" id="city" name="city" placeholder="Enter your city *" oninput="validationCheckCity()" required/><br><br>
+            <input type="text" id="mobile" name="mobile" placeholder="(ddd)ddd-dddd or ddd-ddd-dddd *" oninput="validationCheckMobile()" required/><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email *" oninput="validationCheckEmail()" required/><br><br>
+            <input type="text" id="make" name="make" placeholder="Enter vehicle make eg: BMW *" oninput="validationCheckMake()" required><br><br>
+            <input type="text" id="model" name="model" placeholder="Enter vehicle model eg: 328i *" oninput="validationCheckModel()" required><br><br>
+            <input type="text" id="year" name="year" placeholder="Enter vehicle year eg: 2018 *" oninput="validationCheckYear()" required><br><br>
+            <p id="message">text</p>
+            <input type="submit" id="submit" value="Submit" /><input type="button" id="viewData" value="View Data"/>
+        </form>
+        <script type="text/javascript">
+          document.getElementById("viewData").onclick = function(){
+            window.location.href = "viewPage.html"
+          }
+        </script>
+
+    </div>
+</body>
+</html>
